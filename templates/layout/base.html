@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> 
+            {% block title %}{% endblock %}
+        </title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href=" {% static 'css/bootstrap.min.css' %} ">
+
+        <!-- FontAwesome CSS -->
+        <link rel="stylesheet" href=" {% static 'css/font-awesome.min.css' %} ">
+
+        <!-- ElegantFonts CSS -->
+        <link rel="stylesheet" href=" {% static 'css/elegant-fonts.css' %} ">
+
+        <!-- themify-icons CSS -->
+        <link rel="stylesheet" href=" {% static 'css/themify-icons.css' %} ">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href=" {% static 'css/swiper.min.css' %} ">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href=" {% static 'style.css' %} ">
+    </head>
+    <body>
+        <div>
+            <!-- Barre de navigation -->
+            {% include 'layout/_navbar.html' %}
+        </div>
+        <div>
+            <!-- Contenu de la page -->
+            {% block content %}{% endblock %}
+        </div>
+        <div>
+            <!-- Pied de page -->
+            {% include 'layout/_footer.html' %}
+        </div>
+
+        <script type='text/javascript' src=" {% static 'js/jquery.js' %} " ></script>
+        <script type='text/javascript' src=" {% static 'js/jquery.collapsible.min.js' %} "></script>
+        <script type='text/javascript' src=" {% static 'js/swiper.min.js' %} " ></script>
+        <script type='text/javascript' src=" {% static 'js/jquery.countdown.min.js' %} "></script>
+        <script type='text/javascript' src=" {% static 'js/circle-progress.min.js' %} "></script>
+        <script type='text/javascript' src=" {% static 'js/jquery.countTo.min.js' %} "></script>
+        <script type='text/javascript' src=" {% static 'js/jquery.barfiller.js' %} "></script>
+        <script type='text/javascript' src=" {% static 'js/custom.js' %} "></script>
+    </body>
+</html>
