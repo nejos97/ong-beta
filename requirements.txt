@@ -14,7 +14,7 @@ django-zesty-metrics==0.3.1
 gunicorn==19.9.0
 idna==2.8
 Markdown==3.0.1
-Pillow==5.4.0
+Pillow==8.2.0
 prometheus-client==0.6.0
 psycopg2==2.7.6.1
 psycopg2-binary==2.7.6.1
